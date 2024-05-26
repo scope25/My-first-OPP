@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+   
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Righteous&display=swap" rel="stylesheet">
+    <title>Welcome to the news</title>
+</head>
+<style>
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Bruno Ace SC';
+     font-size: 25px;
+  }
+
+  section{
+     position: relative;   
+     width: 100%;
+     height:100vh;
+     padding: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+  }
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.953);
+    background: #0e142c;
+    
+  }
+
+  header img{
+     position: relative;
+     max-width: 100px;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+}
+
+  header ul li {
+     list-style: none;
+  }
+
+  header ul li a {
+       display: inline-block;
+       color: #ffffff;
+       font-weight: 400;
+       margin-left: 40px;
+       text-decoration: none;     
+  }
+
+  header ul li a:hover{
+     color: rgb(69, 176, 171);
+  }
+
+  header ul li a b{
+  font-size: 30px;
+  background: -webkit-linear-gradient(#131111, rgb(151, 255, 253), rgb(237, 240, 240));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   font-weight: 400;
+  letter-spacing: -1px;
+  
+}
+
+
+.footer{
+   padding:0px;
+   margin: 0px;
+   box-sizing: border-box;
+   
+}
+
+.main-warp{
+  width: 100%;
+  background: #ffffff;
+}
+
+.footer-wrap{
+   position: relative;
+   margin-top: 400px;
+   width: 100%;
+   padding: 40px;
+   background: #0e142c;
+}
+
+.footer-wrap-1{
+  display: flex;
+}
+
+.footer-sec{
+  width: 22%;
+  display: block;
+  padding: 10px 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-sec:last-of-type{
+   width: 34%;
+}
+
+.footer-sec p{
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.footer-sec h1{
+  font-size: 20px;
+  color: rgb(23, 199, 230);
+  margin-bottom: 8px;
+}
+
+.footer-sec a{
+  color: #ffffff;   
+  display: block;
+  text-decoration: none;
+}
+
+ form{
+  position: relative;
+}
+
+ form input{ 
+  position: absolute;
+  height: 35px;
+  width: 220px;
+  margin: 8px 0px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-size: 14px;
+}
+
+form .btn{
+  height: 35px;
+  background: rgb(14, 145, 155);
+  border: none;
+  padding: 0px 6px;
+  margin: 8px 0px;
+  position: absolute;
+  left: 54%;
+  font-weight: 600;
+  cursor: pointer;
+  color:#ffffff;
+}
+
+.btn:hover{
+    background-color: rgb(3, 122, 233);
+}
+
+.line{
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background: rgb(141, 142, 142);
+  border-radius: 10px;
+  
+}
+
+.social-link{
+  padding-top: 25px;
+  text-align: center;
+}
+
+.social-link a{
+  text-decoration: none;
+  height: 25px;
+  display: inline-block;
+  width: 25px;
+  padding: 0px;
+  border-radius: 20px;
+  margin: 5px;
+  background: rgb(224, 222, 222);
+}
+
+.social-link a img{
+   width: 20px;
+   height: 22px;
+
+}
+</style>
+<body>
+  <section>
+    <header>
+        <a href="#"><img src="images/logo01.png"></a>
+          <ul>
+            <li><a><b>LEGEND NEWS </b></a></li>
+          </ul>
+          
+       
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Tarvel</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Spoats</a></li>
+        </ul>
+    </header>
+</section>
+
+  <div class="footer">
+    <div class="main-wrap">
+      <div class="footer-wrap">
+        <div class="footer-wrap-1">
+          <div class="footer-sec">
+            <h1>About</h1>
+            <a href="#">Services</a>
+            <a href="#">Sitemap</a>
+            <a href="#">Help</a>
+            <a href="#">Code of Bro69</a>
+           </div>
+           <div class="footer-sec">
+            <h1>Privacy Policy</h1>
+            <a href="#">Disclaimer</a>
+            <a href="#">licence</a>
+           </div>
+         <div class="footer-sec">
+          <h1>Contact Us</h1>
+          <a href="#">Social Media</a>
+          <a href="#">Advertise With Us</a>
+          <a href="#">Print Ad Rate</a>
+          <a href="#">Feedback@FakeNews.in</a>
+         </div>
+         <div class="footer-sec">
+          <h1>Updated</h1>
+          <p>Subscribe-Terms Of Use</p>
+          <form>
+            <input type="email" name="email" id="email" placeholder="Enter your Email Address">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          </div>
+        </div>
+        <div class="footer-wrap-2">
+          <div class="line"></div>
+          <div class="social-link">
+            <a href="#">
+              <img src="images/facebook01.png" alt="Facebook">
+            </a>
+            <a href="#">
+              <img src="images/google02.png" alt="google">
+            </a>
+            <a href="#">
+              <img src="images/twitter03.png" alt="twitter">
+            </a>
+            <a href="#">
+              <img src="images/instagram04.webp" alt="Instagram">
+            </a>
+            <a href="#">
+              <img src="images/telegram05.png" alt="Telegram">
+            </a>
+            <a href="#">
+              <img src="images/youtube06.webp" alt="Youtube">
+            </a>
+           <a href="#">
+              <img src="images/linkedin07.png" alt="linkedin">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
